@@ -388,6 +388,7 @@ function toNaryString(num, n) {
  */
 function getCommonDirectoryPath(pathes) {
   let dir = '';
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     const regexp = new RegExp(`^${dir}[a-z0-9_]*/`, 'i');
     const search = regexp.exec(pathes[0]);
